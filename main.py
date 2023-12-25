@@ -26,3 +26,9 @@ def get_db():
 
 
 from src.route import tape, registration, authorizations, likeVideo, viewing, createVideo, deleteVideo, likeVideoWebsoket
+
+
+if __name__ == '__main__':
+    import uvicorn
+
+    uvicorn.run('main:app', host='0.0.0.0', port=8000, reload=True)
